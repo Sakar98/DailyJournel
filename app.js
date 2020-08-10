@@ -35,9 +35,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 mongoose.connect(
-  "mongodb+srv://admin_sakar:" +
-    process.env.DB_PASSWORD +
-    "@cluster1.5znki.mongodb.net/blogDB?retryWrites=true&w=majority",
+  "mongodb+srv://admin_sakar:Database@1001@cluster1.5znki.mongodb.net/blogDB?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -76,8 +74,9 @@ passport.deserializeUser(function (user, done) {
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET,
+      clientID:
+        "296956664283-c7utg6vi713d0a6on6ilqltofj37c9cj.apps.googleusercontent.com",
+      clientSecret: "u_HnWHT31AGyFAjPnDh6ewbc",
       callbackURL: "http://localhost:3000/auth/google/dailyjournel",
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
