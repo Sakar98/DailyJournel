@@ -1,0 +1,11 @@
+<%- include('partials/header'); -%>
+
+<h1>Home</h1>
+
+<h3><%= content %></h3>
+
+<% contentTitle.forEach(title =>{ %>
+<h4><%= title %></h4>
+<% }) %> <% contentDesc.forEach(desc =>{ %>
+<p><%= desc %></p>
+<% }) %> <%- include('partials/footer'); -%>

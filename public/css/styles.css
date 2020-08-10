@@ -1,0 +1,153 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body,
+.jumbotron {
+  background-color: #007180;
+  color: white;
+  line-height: 4rem;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+h1,
+p,
+a,
+label,
+h3,
+h4,
+span {
+  color: #fff;
+  font-family: "Lemonada", cursive;
+}
+
+h1,
+p,
+h3,
+h4 {
+  margin-left: 80px;
+  margin-right: 80px;
+  line-height: 3rem;
+}
+
+.btnn {
+  border: 2px solid black;
+  font-size: 2.5rem;
+  margin: 8px 7px;
+  font-weight: bold;
+  color: white;
+  background-color: #1abc9c;
+  width: 400px;
+  height: 44px;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar-brand {
+  color: #1abc9c !important;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  background-color: black;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.lead {
+  color: grey;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #1abc9c;
+}
+
+.containerAuth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoff li {
+  list-style: none;
+}
+.logoff a {
+  border: 2px solid black;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 3px 291px;
+  color: #1abc9c;
+  background-color: black;
+}
+
+.logoff a:hover {
+  color: aqua;
+  background-color: rgb(24, 22, 22);
+  text-decoration: none;
+}
+
+.delete {
+  float: right;
+  margin-right: 100px;
+}
+
+.form-group {
+  width: 87%;
+  margin: auto;
+}
+
+.form-group button {
+  margin: 15px 0;
+}
+
+.reg {
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 5%;
+}

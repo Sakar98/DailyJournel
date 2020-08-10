@@ -1,0 +1,54 @@
+<%- include('partials/header'); -%>
+<style>
+  body {
+    color: black;
+    text-align: center;
+  }
+  hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%;
+  }
+  .social {
+    position: fixed;
+    left: 10px;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    line-height: 5rem;
+  }
+</style>
+
+<h1>Contact us:</h1>
+<h3>Phone no: 9958237183</h3>
+<h3>Email: saakarchauhan1998@gmail.com</h3>
+<hr />
+<form
+  action="mailto:saakarchauhan1998@gmail.com"
+  method="post"
+  enctype="text/plain"
+>
+  <label>Your Name :</label>
+  <input type="text" name="Your Name:" value="" /><br /><br />
+  <label>Your Email :</label>
+  <input type="email" name="" value="" /><br /><br />
+  <label>Your Message:</label>
+  <textarea name="Your Message:" rows="2" cols="30"></textarea><br /><br />
+  <input class="btnn" type="submit" name="" />
+  <hr />
+</form>
+
+<div class="social">
+  <a href="https://www.facebook.com/saakar.chauhan/">
+    <i class="fab fa-facebook fa-2x"></i>
+  </a>
+  <a href="https://www.instagram.com/saakarchauhan/">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
+  <a href="https://www.twitter.com/SakarChauhan?s=08/">
+    <i class="fab fa-twitter fa-2x"></i>
+  </a>
+</div>
+<%- include('partials/footer'); -%>

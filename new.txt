@@ -1,0 +1,18 @@
+<!-- <% posts.forEach(post =>{ %>
+    <h1><%= post.Title %></h1>
+    <p><%= post.Post.substr(0, 100) %> .... <a href="/posts/<%= post.Title%>">Read More..</a></p>
+ <% }); %>    -->
+
+
+
+const userSchema = new mongoose.Schema({
+  username: String,
+  password: String,
+  googleID: String,
+  posts: [String],
+});
+
+  User.findOne({ username: currUser }, function (err, doc) {
+    doc.posts.push(post);
+    doc.save();
+  });

@@ -1,0 +1,31 @@
+<%- include('partials/header'); -%>
+
+<div class="jumbotron centered">
+  <div class="containerAuth">
+    <i class="fas fa-book fa-6x"></i>
+    <h1 class="display-3">Keep Track</h1>
+    <p class="lead">Your Daily Journel.</p>
+    <hr />
+    <a class="btnn register" href="/register" role="button">Register</a>
+    <a class="btnn login" href="/login" role="button">Login</a>
+
+    <br />
+
+    <div class="col-sm-1">
+      <div class="card social-block">
+        <div class="card-body">
+          <a
+            class="btn btn-social btn-google"
+            href="/auth/google"
+            role="button"
+          >
+            <i class="fab fa-google"></i>
+            Google
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer'); -%>
