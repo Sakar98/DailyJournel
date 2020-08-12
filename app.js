@@ -77,7 +77,8 @@ passport.use(
       clientID:
         "272628294683-k3lsq6bt78m68ao73cphj3hibcen5541.apps.googleusercontent.com",
       clientSecret: "1bv-Y14VV4toKGaheZq5iSpU",
-      callbackURL: "http://localhost:3000/auth/google/dailyjournel",
+      callbackURL:
+        "https://shrouded-caverns-50797.herokuapp.com/auth/google/dailyjournel",
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
     function (accessToken, refreshToken, profile, cb) {
