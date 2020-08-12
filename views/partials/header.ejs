@@ -22,23 +22,37 @@
       rel="stylesheet"
     />
 
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <p class="navbar-brand">DAILY JOURNAL</p>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <!-- 6 -->
-          <li id="home"><a href="/">HOME</a></li>
-          <li id="about"><a href="/about">ABOUT US</a></li>
-          <li id="contact"><a href="/contact">CONTACT US</a></li>
-          <li id="login"><a href="/posts">POSTS</a></li>
-        </ul>
+    <nav>
+      <div class="logo">
+        <h1>Daily Journel</h1>
       </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li id="home"><a href="/">HOME</a></li>
+        <li id="about"><a href="/about">ABOUT US</a></li>
+        <li id="contact"><a href="/contact">CONTACT US</a></li>
+        <li id="login"><a href="/posts">POSTS</a></li>
+      </ul>
     </nav>
 
     <body>
       <div class="container"></div>
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("open");
+          links.forEach((link) => {
+            link.classList.toggle("fade");
+          });
+        });
+      </script>
     </body>
   </head>
 </html>
