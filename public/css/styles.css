@@ -74,9 +74,9 @@ nav {
 .logo h1 {
   font-size: 2rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-left: 60px;
-  height: 10vh;
   color: #1abc9c !important;
 }
 
@@ -134,8 +134,8 @@ nav {
     z-index: 2;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
     pointer-events: all;
   }
   .landing {
