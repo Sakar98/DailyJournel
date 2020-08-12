@@ -76,6 +76,8 @@ nav {
   display: flex;
   align-items: center;
   padding-left: 60px;
+  height: 10vh;
+  color: #1abc9c !important;
 }
 
 .nav-links {
@@ -98,7 +100,7 @@ nav {
   color: #1abc9c;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .line {
     width: 30px;
     height: 3px;
@@ -116,12 +118,6 @@ nav {
     top: 50%;
     transform: translate(-5%, -50%);
     z-index: 13;
-  }
-
-  .logo h1 {
-    font-size: 2rem;
-    width: 60vw;
-    padding-left: 15px;
   }
 
   .nav-links {
