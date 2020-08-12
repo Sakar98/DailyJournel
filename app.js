@@ -75,8 +75,8 @@ passport.use(
   new GoogleStrategy(
     {
       clientID:
-        "1075766383894-i72eatdc1krjje0u1nrg733rlpi84ffu.apps.googleusercontent.com",
-      clientSecret: "o9t0XwV7Mxw9ewEhLmABXlHD",
+        "272628294683-k3lsq6bt78m68ao73cphj3hibcen5541.apps.googleusercontent.com",
+      clientSecret: "1bv-Y14VV4toKGaheZq5iSpU",
       callbackURL: "http://localhost:3000/auth/google/dailyjournel",
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
