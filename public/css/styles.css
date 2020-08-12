@@ -110,6 +110,7 @@ nav {
   }
   nav {
     position: relative;
+    height: 5vh;
   }
 
   .hamburger {
@@ -135,8 +136,8 @@ nav {
     z-index: 2;
   }
   .nav-links.open {
-    clip-path: circle(2100px at 90% -10%);
-    -webkit-clip-path: circle(2100px at 90% -10%);
+    clip-path: circle(2300px at 90% -10%);
+    -webkit-clip-path: circle(2300px at 90% -10%);
     pointer-events: all;
   }
   .nav-links li {
