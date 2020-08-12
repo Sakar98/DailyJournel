@@ -76,6 +76,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: -webkit-fill-available;
   padding-left: 60px;
   color: #1abc9c !important;
 }
@@ -134,12 +135,9 @@ nav {
     z-index: 2;
   }
   .nav-links.open {
-    clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -10%);
+    clip-path: circle(2100px at 90% -10%);
+    -webkit-clip-path: circle(2100px at 90% -10%);
     pointer-events: all;
-  }
-  .landing {
-    flex-direction: column;
   }
   .nav-links li {
     opacity: 0;
