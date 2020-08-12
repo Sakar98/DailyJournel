@@ -35,9 +35,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 mongoose.connect(
-  "mongodb+srv://admin_sakar:" +
-    process.env.DB_PASSWORD +
-    "@cluster1.5znki.mongodb.net/blogDB?retryWrites=true&w=majority",
+  "mongodb+srv://admin_sakar:Database@1001@cluster1.5znki.mongodb.net/blogDB?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -76,8 +74,9 @@ passport.deserializeUser(function (user, done) {
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET,
+      clientID:
+        "272628294683-k3lsq6bt78m68ao73cphj3hibcen5541.apps.googleusercontent.com",
+      clientSecret: "1bv-Y14VV4toKGaheZq5iSpU",
       callbackURL:
         "https://shrouded-caverns-50797.herokuapp.com/auth/google/dailyjournel",
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
