@@ -170,6 +170,7 @@ nav {
 
 .footer {
   position: absolute;
+  justify-content: center;
   text-align: center;
   bottom: 0;
   width: 100%;
